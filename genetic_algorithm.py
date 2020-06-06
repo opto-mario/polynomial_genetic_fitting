@@ -102,6 +102,3 @@ if __name__ == '__main__':
 
     plt.plot(fitted_data_x, fitted_data_y, color="red")
     plt.show()
-
-
-    print("hold on")
