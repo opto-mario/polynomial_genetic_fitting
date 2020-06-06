@@ -18,7 +18,8 @@ def generate_fuzzy_data(order, start, stop, jitter=0,  *args):
             for i in range(len(args)):
                 coef.append(args[i])
         else:
-            print("number of coefficients should be equal to the order of the equation")
+            print("number of coefficients should be equal to the order of the equation + 1")
+            print("For instance: for fitting second order equation, you need to have 3 coefficients)
     else:
         coef = [random.uniform(-1, 1) for _i in range(order)]
 
